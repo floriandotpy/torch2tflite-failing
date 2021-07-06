@@ -17,11 +17,15 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Run conversion scripts:
+
 ```
 python step1_torch2onnx.py
 python step2_onnx2tf.py
 python step3_tf2tflite.py
 ```
+
+**Download assets** (optional): If you want to skip scripts 1 and 2 on your machine, download the prepared onnx and tensorflow models. Download and then unzip as `assets/`: https://florianletsch.de/media/torch2tflite-assets.zip (498 MB)
 
 ## What will happen
 
