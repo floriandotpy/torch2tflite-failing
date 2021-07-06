@@ -1,0 +1,68 @@
+2021-07-06 16:35:23.909663: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-07-06 16:35:23.909680: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2021-07-06 16:35:25.192387: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2021-07-06 16:35:25.224206: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-07-06 16:35:25.224753: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1650 Ti computeCapability: 7.5
+coreClock: 1.485GHz coreCount: 16 deviceMemorySize: 3.82GiB deviceMemoryBandwidth: 178.84GiB/s
+2021-07-06 16:35:25.224886: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-07-06 16:35:25.224975: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublas.so.11'; dlerror: libcublas.so.11: cannot open shared object file: No such file or directory
+2021-07-06 16:35:25.225040: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublasLt.so.11'; dlerror: libcublasLt.so.11: cannot open shared object file: No such file or directory
+2021-07-06 16:35:25.225113: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcufft.so.10'; dlerror: libcufft.so.10: cannot open shared object file: No such file or directory
+2021-07-06 16:35:25.225139: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcurand.so.10'; dlerror: libcurand.so.10: cannot open shared object file: No such file or directory
+2021-07-06 16:35:25.225183: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusolver.so.11'; dlerror: libcusolver.so.11: cannot open shared object file: No such file or directory
+2021-07-06 16:35:25.225227: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusparse.so.11'; dlerror: libcusparse.so.11: cannot open shared object file: No such file or directory
+2021-07-06 16:35:25.225274: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory
+2021-07-06 16:35:25.225282: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1766] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-07-06 16:35:25.225463: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-07-06 16:35:25.225917: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-07-06 16:35:25.225928: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      
+2021-07-06 16:50:21.991311: W tensorflow/compiler/mlir/lite/python/tf_tfl_flatbuffer_helpers.cc:345] Ignored output_format.
+2021-07-06 16:50:21.991375: W tensorflow/compiler/mlir/lite/python/tf_tfl_flatbuffer_helpers.cc:348] Ignored drop_control_dependency.
+2021-07-06 16:50:21.991389: W tensorflow/compiler/mlir/lite/python/tf_tfl_flatbuffer_helpers.cc:354] Ignored change_concat_input_ranges.
+2021-07-06 16:50:21.993851: I tensorflow/cc/saved_model/reader.cc:38] Reading SavedModel from: assets/tfsavedmodel
+2021-07-06 16:50:22.096167: I tensorflow/cc/saved_model/reader.cc:90] Reading meta graph with tags { serve }
+2021-07-06 16:50:22.096198: I tensorflow/cc/saved_model/reader.cc:132] Reading SavedModel debug info (if present) from: assets/tfsavedmodel
+2021-07-06 16:50:22.096295: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-07-06 16:50:22.096303: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      
+2021-07-06 16:50:22.315152: I tensorflow/cc/saved_model/loader.cc:206] Restoring SavedModel bundle.
+2021-07-06 16:50:22.371195: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2599990000 Hz
+2021-07-06 16:50:22.719718: I tensorflow/cc/saved_model/loader.cc:190] Running initialization op on SavedModel bundle at path: assets/tfsavedmodel
+2021-07-06 16:50:23.083307: I tensorflow/cc/saved_model/loader.cc:277] SavedModel load for tags { serve }; Status: success: OK. Took 1089464 microseconds.
+2021-07-06 16:50:24.156771: I tensorflow/compiler/mlir/tensorflow/translate/import_model.cc:1856] Unmodelled op type `CropAndResize` is not stateful but will be treated as such conservatively
+2021-07-06 16:50:24.486014: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:210] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2021-07-06 16:50:25.404278: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-07-06 16:50:25.404630: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce GTX 1650 Ti computeCapability: 7.5
+coreClock: 1.485GHz coreCount: 16 deviceMemorySize: 3.82GiB deviceMemoryBandwidth: 178.84GiB/s
+2021-07-06 16:50:25.404647: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1766] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-07-06 16:50:25.472962: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-07-06 16:50:25.472983: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2021-07-06 16:50:25.472988: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+loc(callsite(callsite("onnx_tf_prefix_If_1347@__inference___call___15681" at "StatefulPartitionedCall@__inference_signature_wrapper_16224") at "StatefulPartitionedCall")): error: could not rewrite use of immutable bound input
+Traceback (most recent call last):
+  File "/home/florian/projects/torch2tflite-failing/venv/lib/python3.8/site-packages/tensorflow/lite/python/convert.py", line 291, in toco_convert_protos
+    model_str = wrap_toco.wrapped_toco_convert(model_flags_str,
+  File "/home/florian/projects/torch2tflite-failing/venv/lib/python3.8/site-packages/tensorflow/lite/python/wrap_toco.py", line 32, in wrapped_toco_convert
+    return _pywrap_toco_api.TocoConvert(
+Exception: <unknown>:0: error: loc(callsite(callsite("onnx_tf_prefix_If_1347@__inference___call___15681" at "StatefulPartitionedCall@__inference_signature_wrapper_16224") at "StatefulPartitionedCall")): could not rewrite use of immutable bound input
+<unknown>:0: note: loc("StatefulPartitionedCall"): called from
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "step3_tf2tflite.py", line 7, in <module>
+    tflite_model = converter.convert()
+  File "/home/florian/projects/torch2tflite-failing/venv/lib/python3.8/site-packages/tensorflow/lite/python/lite.py", line 913, in convert
+    result = _convert_saved_model(**converter_kwargs)
+  File "/home/florian/projects/torch2tflite-failing/venv/lib/python3.8/site-packages/tensorflow/lite/python/convert.py", line 722, in convert_saved_model
+    data = toco_convert_protos(
+  File "/home/florian/projects/torch2tflite-failing/venv/lib/python3.8/site-packages/tensorflow/lite/python/convert.py", line 297, in toco_convert_protos
+    raise ConverterError(str(e))
+tensorflow.lite.python.convert.ConverterError: <unknown>:0: error: loc(callsite(callsite("onnx_tf_prefix_If_1347@__inference___call___15681" at "StatefulPartitionedCall@__inference_signature_wrapper_16224") at "StatefulPartitionedCall")): could not rewrite use of immutable bound input
+<unknown>:0: note: loc("StatefulPartitionedCall"): called from
+

@@ -1,0 +1,28 @@
+Loading pytorch model...
+Converting to onnx...
+/home/florian/projects/torch2tflite-failing/venv/lib/python3.8/site-packages/torch/nn/functional.py:3679: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  (torch.floor((input.size(i + 2).float() * torch.tensor(scale_factors[i], dtype=torch.float32)).float()))
+/home/florian/projects/torch2tflite-failing/venv/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+/home/florian/projects/torch2tflite-failing/venv/lib/python3.8/site-packages/torch/_tensor.py:575: UserWarning: floor_divide is deprecated, and will be removed in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values.
+To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor'). (Triggered internally at  /pytorch/aten/src/ATen/native/BinaryOps.cpp:467.)
+  return torch.floor_divide(self, other)
+/home/florian/projects/torch2tflite-failing/venv/lib/python3.8/site-packages/torchvision/models/detection/anchor_utils.py:122: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  strides = [[torch.tensor(image_size[0] // g[0], dtype=torch.int64, device=device),
+/home/florian/projects/torch2tflite-failing/venv/lib/python3.8/site-packages/torchvision/models/detection/anchor_utils.py:123: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  torch.tensor(image_size[1] // g[1], dtype=torch.int64, device=device)] for g in grid_sizes]
+/home/florian/projects/torch2tflite-failing/venv/lib/python3.8/site-packages/torchvision/ops/boxes.py:146: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  boxes_x = torch.min(boxes_x, torch.tensor(width, dtype=boxes.dtype, device=boxes.device))
+/home/florian/projects/torch2tflite-failing/venv/lib/python3.8/site-packages/torchvision/ops/boxes.py:148: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  boxes_y = torch.min(boxes_y, torch.tensor(height, dtype=boxes.dtype, device=boxes.device))
+/home/florian/projects/torch2tflite-failing/venv/lib/python3.8/site-packages/torchvision/models/detection/transform.py:282: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  torch.tensor(s, dtype=torch.float32, device=boxes.device) /
+/home/florian/projects/torch2tflite-failing/venv/lib/python3.8/site-packages/torchvision/models/detection/transform.py:283: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  torch.tensor(s_orig, dtype=torch.float32, device=boxes.device)
+/home/florian/projects/torch2tflite-failing/venv/lib/python3.8/site-packages/torch/onnx/symbolic_opset9.py:2762: UserWarning: Exporting aten::index operator of advanced indexing in opset 11 is achieved by combination of multiple ONNX operators, including Reshape, Transpose, Concat, and Gather. If indices include negative values, the exported graph will produce incorrect results.
+  warnings.warn("Exporting aten::index operator of advanced indexing in opset " +
+/home/florian/projects/torch2tflite-failing/venv/lib/python3.8/site-packages/torch/onnx/symbolic_opset9.py:697: UserWarning: This model contains a squeeze operation on dimension 1 on an input with unknown shape. Note that if the size of dimension 1 of the input is not 1, the ONNX model will return an error. Opset version 11 supports squeezing on non-singleton dimensions, it is recommended to export this model using opset version 11 or higher.
+  warnings.warn("This model contains a squeeze operation on dimension " + str(squeeze_dim) + " on an input " +
+[onnx] Written assets/model.onnx
+Time elapsed: 13 seconds
+
