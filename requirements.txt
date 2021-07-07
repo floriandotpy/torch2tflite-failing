@@ -1,4 +1,4 @@
-tensorflow==2.5.0
+tf-nightly-cpu==2.7.0.dev20210706  # required for converting immutable variables
 onnx==1.9.0
 onnx-tf==1.8.0
 torch==1.9.0

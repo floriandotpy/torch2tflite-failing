@@ -1,5 +1,13 @@
-torch 2 tflite: failure documentation
+torch 2 tflite: Converting Faster-RCNN
 ---
+
+## UPDATE: The issue is fixed
+
+This repository now contains a working conversion path from PyTorch to tflite of a Faster-RCNN model with a resnet backbone.
+
+The issue was fixed using `tf-nightly-cpu` and setting the flag `converter.experimental_enable_resource_variables = True`.
+
+## Outdated: The original issue
 
 This is a simplified example to reproduce an issue I am having when trying to convert a model from PyTorch to TensorFlow Lite.
 
